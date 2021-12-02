@@ -81,7 +81,7 @@ router.post("/login", (req, res)=>{
                         username: user.username,
                         password: user.password
                         },
-                        process.env.KEYS, 
+                        'projetStrategIn2021Kebe', 
                         {expiresIn: 3600}, 
                             (err, token) =>{
                                 if (err) throw err;
@@ -104,7 +104,7 @@ app.get("/users", (req, res) =>{
     const token = req.headers['x-access-token'];
     
     if (token){
-    const decodedToken = jwt.verify(token, process.env.KEYS, (err, decode)=>{
+    const decodedToken = jwt.verify(token, 'projetStrategIn2021Kebe', (err, decode)=>{
         if (err) {
             res.json({message: "Pas d'autorisation trouvée"});
         }
