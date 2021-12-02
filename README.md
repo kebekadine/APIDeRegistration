@@ -1,7 +1,7 @@
 # APIDeRegistration
 API de registration avec MERN stack.
 
-#INSTALLATION 
+# INSTALLATION 
 
 1- Cloner le repo  en clickant sur le boutton vert, copier le lien
 2- Aller dans un terminal et faire : git clone LIENCOPIER.
