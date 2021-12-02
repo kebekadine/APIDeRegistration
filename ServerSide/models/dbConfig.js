@@ -5,7 +5,11 @@ mongoose.connect(process.env.MONGO_URI| 'mongodb+srv://dataBaseUsr:dbUser@cluste
     .then(() => {
         console.log("connected to the database");
     })
-    .catch(() => console.log("error when connecting"));
+    .catch((e) => {
+    console.log("error when connecting");
+    console.log(e);
+    }
+    );
 
 mongoose.connection.on("connected", ()=>{
     console.log("connected");
