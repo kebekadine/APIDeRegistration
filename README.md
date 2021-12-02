@@ -9,7 +9,7 @@ API de registration avec MERN stack.
 
 3-Une fois cloner, se positionner sur le dossier telechargé.
 
-4- faire un cd ServerSide, puis npm init, ensuite npm i dotenv.
+4- faire un cd ServerSide, puis npm init, ensuite npm i dotenv, npm i --save cors.
 
 5- Si tout est ok, faire un npm start ou nodemon server.js
 
