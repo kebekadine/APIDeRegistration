@@ -81,7 +81,7 @@ router.post("/login", (req, res)=>{
                         username: user.username,
                         password: user.password
                         },
-                        'projetStrategIn2021Kebe', 
+                        '2021Kebe', 
                         {expiresIn: 3600}, 
                             (err, token) =>{
                                 if (err) throw err;
