@@ -104,7 +104,7 @@ app.get("/users", (req, res) =>{
     const token = req.headers['x-access-token'];
     
     if (token){
-    const decodedToken = jwt.verify(token, 'projetStrategIn2021Kebe', (err, decode)=>{
+    const decodedToken = jwt.verify(token, '2021Kebe', (err, decode)=>{
         if (err) {
             res.json({message: "Pas d'autorisation trouvée"});
         }
